@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register for TechCon 2024</title>
+  <style>
+    /* Basic Reset and Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header Section */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background: #555;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content Styles */
+    main {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    main h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 8px 0 4px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="checkbox"] {
+      margin: 10px 0;
+    }
+
+    button[type="submit"] {
+      padding: 10px;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background: #555;
+    }
+
+    /* Footer Section */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <!-- Header Section -->
+  <header>
+    <h1>Register for TechCon 2024</h1>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main>
+    <h2>Conference Registration Form</h2>
+    <form action="/submit_registration" method="POST">
+      
+      <!-- Name Field -->
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <!-- Email Field -->
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+      
+      <!-- Password Fields -->
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" id="confirm_password" name="confirm_password" required>
+      
+      <!-- Terms & Conditions Checkbox -->
+      <label>
+        <input type="checkbox" id="terms" name="terms" required>
+        I agree to the terms and conditions.
+      </label>
+      
+      <!-- Submit Button -->
+      <button type="submit">Register Now</button>
+    </form>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    &copy; 2024 TechCon. All rights reserved.
+  </footer>
+  
+</body>
+</html>
